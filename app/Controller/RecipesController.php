@@ -7,11 +7,10 @@ class RecipesController extends AppController {
 	public $uses = array('Recipe', 'Image');
 	public $components = array('CheckJson', 'Converter');
 
-	public function index() {
+	public function index($page = 1) {
 
 		/* Получение данных из поля Data БД*/
 
-		$page=1;
 		$lenght = 10;
 		$recipes = $this->Recipe->find("all",array('limit'=>$lenght, 'page'=>$page,'recursive' => -1));
 
@@ -38,7 +37,7 @@ class RecipesController extends AppController {
 				$imagedata = $json->images;
 				$arrayimglinks[] = $this->Image->getImage($imagedata, 120);
 			} else {
-				$arrayimglinks[] = 'img/120/default.jpg';
+				$arrayimglinks[] = FULL_BASE_URL.'/img/120/default.jpg';
 			}
 		}
 

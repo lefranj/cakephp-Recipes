@@ -8,7 +8,7 @@ class Image extends AppModel {
 	/*Получаем изображение необходимого размера*/
 
 	public function getImage($imgdata, $size) {
-		if (isset($imgdata) && !empty($imgdata)){
+		if (isset($imgdata[0]) && !empty($imgdata[0])){
 
 			$imgurl = $imgdata[0]->url;
 			$imgcrc = $imgdata[0]->crc;
@@ -16,7 +16,7 @@ class Image extends AppModel {
 			/*Если есть копия изображения необходимого размера, то возвращаем путь к ней*/
 
 			if (file_exists(WWW_ROOT."img/$size/$imgcrc.jpg")) {
-				return $link = FULL_BASE_URL."/img/$size/$imgcrc.jpg";
+				return FULL_BASE_URL."/img/$size/$imgcrc.jpg";
 			}
 
 			/*Если копии изображения нужного размера нет, то пробуем
@@ -28,7 +28,7 @@ class Image extends AppModel {
 				/*При статусе ответа 200 сохраняем оригинал*/
 
 				if ($response->code !== '200') {
-					return $link = FULL_BASE_URL."/img/$size/default.jpg";
+					return FULL_BASE_URL."/img/$size/default.jpg";
 				}
 
 				file_put_contents(WWW_ROOT."img/full/$imgcrc.jpg", $response);
@@ -42,7 +42,7 @@ class Image extends AppModel {
 
 				/*Возвращаем путь к копии изображения нужного размера*/
 
-				return $link = FULL_BASE_URL."/img/$size/$imgcrc.jpg";
+				return FULL_BASE_URL."/img/$size/$imgcrc.jpg";
 		}
 	}
 
