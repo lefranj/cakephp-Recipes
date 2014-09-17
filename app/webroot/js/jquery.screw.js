@@ -23,7 +23,7 @@
     $.fn.extend({ 
         screw: function(options) {
             var defaults = {
-             loadingHTML : 'Loading ... '
+             loadingHTML : '<img src="img/loading.gif">'
             },
             option =  $.extend(defaults, options); 
             var obj = $(this), screw_timeout;

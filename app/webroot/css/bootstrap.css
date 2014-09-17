@@ -304,7 +304,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: whtie;
 }
 
 input,
@@ -4045,7 +4045,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
-.navbar-header:before,
+.navbar-heade
+:before,
 .navbar-header:after {
   display: table;
   content: " ";
@@ -6802,13 +6803,4 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
-}
-#recipe_title {
-  font-size: 20px;
-}
-#recipe_calories {
-
-}
-#recipe_cooktime {
-
 }

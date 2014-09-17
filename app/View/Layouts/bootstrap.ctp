@@ -15,13 +15,13 @@
 		<?php
 			echo $this->Html->meta('icon');
 			echo $this->Html->css('bootstrap'); // подключаем стиль
+			echo $this->Html->css('recipelist'); // подключаем стиль
 			echo $this->Html->script('jquery'); // подключаем jQuery
 			echo $this->Html->script('bootstrap');
 			echo $this->Html->script('jquery.pjax'); // подключаем jQuery-pjax
 			echo $this->Html->script('jquery.ba-viewportoffset');
 			echo $this->Html->script('jquery.screw'); // подключаем jQuery-screw
-			echo $this->Html->script('jquery.lazyload'); // подключаем jQuery-lazyload 
-			echo $this->Html->script('psll'); 
+			echo $this->Html->script('psll');
 		?>
 		<style type="text/css">
 			body{ padding: 70px 0px; }
@@ -29,16 +29,10 @@
 	</head>
 	<body>
 		<?php echo $this->Element('navigation'); ?>
-		<div class="container" id="main">
 		<?php echo $this->fetch('content'); ?>
-		<p clcass="screw screw-before screw-repeat" rel="/recipes/index/2"></p>
-		</div>
 	</body>
 </html>
 <?php else: ?>
 	<!--Вывод контента c использованием pjax-->
-		<div class="container" id="main">
-		<?php echo $this->fetch('content'); ?>
-		<p clcass="screw screw-before screw-repeat" rel="/recipes/index/2"></p>
-		</div>
+	<?php echo $this->fetch('content'); ?>
 <?php endif;?>

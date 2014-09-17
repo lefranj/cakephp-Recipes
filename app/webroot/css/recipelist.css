@@ -1,0 +1,152 @@
+
+body{
+	font-family: 'Comic Sans MS', cursive;
+	color: #8B4513;
+}
+
+#recipeshort,
+#recipefull ,
+.image,
+.calories,
+.cooktime,
+.ingredients,
+.description {
+	background: #EEE;
+	background-image: -moz-linear-gradient(top, white,#EEE);
+	background-image: -ms-linear-gradient(top, white, #EEE);
+	background-image: -o-linear-gradient( top, white, #EEE);
+	background-image: -webkit-linear-gradient(top, white, #EEE);
+	background-image: linear-gradient(top, white, #EEE);
+	border: 1px solid #DDD;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 0 #9a9a9a;
+	-webkit-box-shadow: 0 1px 0 #9A9A9A;
+	box-shadow: 0 1px 0 #9A9A9A;
+	margin: 0 0 10px;
+	padding: 15px;
+	text-shadow: 0 1px 0 white;
+	position: relative;
+	z-index: 0;
+}
+
+#recipeshort .image {
+	margin: 0 0 10px;
+	padding: 10px;
+	float: left;
+	width: 140px;
+	height: 140px;
+}
+
+#recipeshort .title{
+font-size: 2em;
+}
+
+#recipeshort .calories{
+	margin: 0 0 5px;
+	padding: 5px;
+	float: left;
+	color: #CD853F;
+}
+
+#recipeshort .cooktime{
+	margin: 0 0 5px;
+	padding: 5px;
+	float: left;
+	color: #CD853F;
+}
+
+#recipeshort .ingredients{
+	margin: 0 0 5px;
+	padding: 5px;
+	text-shadow: 0 1px 0 white;
+	position: relative;
+	z-index: 0;
+	clear: both;
+}
+
+
+#recipefull .image{
+	margin: 0 0 10px;
+	padding: 10px;
+	float: left;
+	width: 260px;
+	height: 260px;
+}
+
+#recipefull .title{
+font-size: 2em;
+}
+
+#recipefull .calories{
+	margin: 0 0 5px;
+	padding: 5px;
+	float: left;
+	color: #CD853F;
+}
+
+#recipefull .cooktime{
+	margin: 0 0 5px;
+	padding: 5px;
+	float: left;
+	color: #CD853F;
+}
+
+#recipefull .ingredients{
+	margin: 0 0 5px;
+	padding: 5px;
+	clear: both;
+	font-size: 1.2em;
+}
+
+#recipefull .description {
+	margin: 0 0 5px;
+	padding: 5px;
+	clear: both;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 777px) {
+	#recipeshort,
+	#recipefull ,
+	.image,
+	.calories,
+	.cooktime,
+	.ingredients,
+	.description {
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		-moz-box-shadow: 0 1px 0 #9a9a9a;
+		-webkit-box-shadow: 0 1px 0 #9A9A9A;
+		box-shadow: 0 1px 0 #9A9A9A;
+		margin: 0 0 4px;
+		padding: 6px;
+		text-shadow: 0 1px 0 white;
+		position: relative;
+		z-index: 0;
+	}
+
+	#recipeshort .ingredients{
+		background: inherit;
+		background-image: none;
+		border:none;
+		-moz-border-radius: none;
+		-webkit-border-radius: none;
+		border-radius: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		margin: 0 0 10px;
+		padding: 15px;
+		text-shadow: 0 1px 0 white;
+		position: relative;
+		z-index: 0;
+		clear: both;
+	}
+
+	.title{
+		font-size: none;
+	}
+}

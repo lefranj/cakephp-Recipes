@@ -7028,3 +7028,717 @@ Request URL: /js/scll.js
 Stack Trace:
 #0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-09-16 12:42:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.screw.js
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:08:06 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:06 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:06 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:06 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:37 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:37 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:43 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:43 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:43 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:43 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:44 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:44 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:44 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:44 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:44 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:44 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:08:44 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:08:44 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:11:32 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:11:32 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:11:32 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:11:32 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:13 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:13 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:13 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:13 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:13 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:13 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:28 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:28 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:28 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:28 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:12:28 Error: Fatal Error (1): Call to undefined method RecipesController::layout() in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 89]
+2014-09-16 15:12:28 Error: [FatalErrorException] Call to undefined method RecipesController::layout()
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/lefranj/w...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/lefranj/w...', 89, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:13:08 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:13:08 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:13:08 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:13:11 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:13:11 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:13:11 Error: [MissingViewException] View file "/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/lefranj/www/ioix/app/View/Recipes/pjax.ctp',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:14:33 Error: [MissingActionException] Action RecipesController::pjax() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'pjax',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:14:33 Error: [MissingActionException] Action RecipesController::pjax() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'pjax',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:14:33 Error: [MissingActionException] Action RecipesController::pjax() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'pjax',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:14:56 Error: [MissingActionException] Action RecipesController::pjax() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'pjax',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:14:56 Error: [MissingActionException] Action RecipesController::pjax() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'pjax',
+)
+Request URL: /recipes/pjax
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 19:24:54 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:24:54 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:24:55 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:24:55 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:24:55 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:24:55 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:26 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:26 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:27 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:27 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:27 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:27 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:57 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:57 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:57 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:57 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:25:57 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:25:57 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:26:13 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:26:13 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:26:13 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:26:13 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:26:13 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 100]
+2014-09-16 19:26:13 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /recipes/screw/2
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 100, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:44:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 99]
+2014-09-16 19:44:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:44:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 99]
+2014-09-16 19:44:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:44:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 99]
+2014-09-16 19:44:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 99, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 19:48:47 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:49:17 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:49:53 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:50:23 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:50:53 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:51:23 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 19:51:54 Error: [SocketException] Connection timed out
+Request URL: /recipes/screw/1
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /ServeImage...')
+#2 /home/lefranj/www/ioix/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /home/lefranj/www/ioix/app/Model/Image.php(26): HttpSocket->get('http://www2.kel...')
+#4 /home/lefranj/www/ioix/app/Controller/RecipesController.php(133): Image->getImage(Array, 120)
+#5 [internal function]: RecipesController->screw('1')
+#6 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#7 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#9 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 20:53:19 Error: [BadRequestException] Bad Request
+Request URL: /recipes/screw/
+Stack Trace:
+#0 [internal function]: RecipesController->screw()
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 20:54:05 Error: [BadRequestException] Bad Request
+Request URL: /recipes/screw/
+Stack Trace:
+#0 [internal function]: RecipesController->screw()
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 21:06:41 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting '(' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 105]
+2014-09-16 21:06:41 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 105, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 105, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 21:17:27 Error: [BadRequestException] Bad Request
+Request URL: /recipes/screw/
+Stack Trace:
+#0 [internal function]: RecipesController->screw()
+#1 /home/lefranj/www/ioix/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecipesController), Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /home/lefranj/www/ioix/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 22:17:37 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 10]
+2014-09-16 22:17:37 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 10, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 10, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 22:26:22 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 22:26:22 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 22:26:22 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 22:26:36 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 22:26:36 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 22:26:36 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 11:48:23 Error: [MissingControllerException] Controller class Wp-contentController could not be found.
+Exception Attributes: array (
+  'class' => 'Wp-contentController',
+  'plugin' => NULL,
+)
+Request URL: /wp-content/themes/stage_wp_hybrid/favicon.ico
+Stack Trace:
+#0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

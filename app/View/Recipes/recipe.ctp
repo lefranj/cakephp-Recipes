@@ -1,6 +1,8 @@
-<?=$title;?><br><br>
-<?=$calories;?><br><br>
-<?=$cooktime;?><br><br>
-<img src="<?=$imglink;?>"><br><br>
-<?=$ingredients;?><br><br>
-<?=$description;?><br><br>
+<div id="recipefull">
+	<div class='title'><?=$title;?><br><br></div>
+	<div class='image'><img src="<?=$imglink;?>"></div>
+	<div class='calories'>Calories: <?=$calories;?></div><br><br>
+	<div class='cooktime'>Cooktime: <?=$cooktime;?></div>
+	<div class='ingredients'><?=$ingredients;?><br><br></div>
+	<div class='description'><?=$description;?><br><br></div>
+</div>

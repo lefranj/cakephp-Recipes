@@ -28,21 +28,20 @@ class Image extends AppModel {
 				/*При статусе ответа 200 сохраняем оригинал*/
 
 				if ($response->code !== '200') {
-					return FULL_BASE_URL."/img/$size/default.jpg";
+					$this->imageResize->load(WWW_ROOT."img/$size/default.jpg");
+					$this->imageResize->save(WWW_ROOT."img/$size/$imgcrc.jpg");
 				}
 
 				file_put_contents(WWW_ROOT."img/full/$imgcrc.jpg", $response);
 			}
 
-				/*Ресайзим его и делаем копию нужного размера*/
+			/*Ресайзим его и делаем копию нужного размера*/
+			$this->imageResize->load(WWW_ROOT."img/full/$imgcrc.jpg");
+			$this->imageResize->resize($size,$size);
+			$this->imageResize->save(WWW_ROOT."img/$size/$imgcrc.jpg");
 
-				$this->imageResize->load(WWW_ROOT."img/full/$imgcrc.jpg");
-				$this->imageResize->resize($size,$size);
-				$this->imageResize->save(WWW_ROOT."img/$size/$imgcrc.jpg");
-
-				/*Возвращаем путь к копии изображения нужного размера*/
-
-				return FULL_BASE_URL."/img/$size/$imgcrc.jpg";
+			/*Возвращаем путь к копии изображения нужного размера*/
+			return FULL_BASE_URL."/img/$size/$imgcrc.jpg";
 		}
 	}
 
