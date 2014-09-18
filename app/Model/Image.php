@@ -19,8 +19,7 @@ class Image extends AppModel {
 				return FULL_BASE_URL."/img/$size/$imgcrc.jpg";
 			}
 
-			//Если копии изображения нужного размера нет, то пробуем
-			получить оригинал по ссылке
+			//Если копии изображения нужного размера нет, то пробуемполучить оригинал по ссылке
 
 			if (!file_exists(WWW_ROOT."img/full/$imgcrc.jpg")) {
 				$response = $this->HttpSocket->get($imgurl);

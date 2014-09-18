@@ -42,6 +42,6 @@ class RssController extends AppController {
 		}
 		// Передаем данные в представление
 		$this->set('toView', $toView);
-		$this->set('title_for_layout', 'RSS')
+		$this->set('title_for_layout', 'RSS');
 	}
 }
