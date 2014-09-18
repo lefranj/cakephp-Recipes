@@ -7,31 +7,29 @@ class RecipesController extends AppController {
 	public $uses = array('Recipe', 'Image');
 	public $components = array('CheckJson', 'Converter', 'RequestHandler');
 
-	public function index($page = 1) {
-		$mt = strtotime('Wed, 17 Sep 2014 19:01:33 GMT');
-		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) &&
-			strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mt)
-		{
-			header('HTTP/1.1 304 Not Modified');
-			die;
-		}
+	/**
+	 *  Метод index вызывается при загрузке страницы со списком рецептов
+	 * @param integer $page - номер страницы. Используется для последовательного получения рецептов из БД
+	 */
 
+	public function index($page = 1) {
+		
 		$this->Session->write('page', 1);
 
-		/* Получение данных из поля Data БД*/
+		// Получение данных из поля Data БД
 
 		$lenght = 10;
 		$arrayRecipes = array();
 		$recipes = $this->Recipe->find("all",array('limit'=>$lenght, 'page'=>$page));
 
-		/* Приведение JSON в пригодное для развертывания состояние*/
+		// Приведение JSON в пригодное для развертывания состояние
 
 		foreach ($recipes as $recipe) {
 			$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
 			$recd = str_replace("\r", '', $recd);
 			$recd = $this->Converter->convert($recd);
 
-			/* Извлечение данных из JSON*/
+			// Извлечение данных из JSON
 
 			if(!$this->CheckJson->isJson($recd)){
 				continue;
@@ -53,10 +51,15 @@ class RecipesController extends AppController {
 				unset($toArray);
 		}
 
-		/*Отправка данных в представление*/
+		// Отправка данных в представление
 
 		$this->set(array('arrayRecipes' => $arrayRecipes));
 	}
+
+	/**
+	 *  Метод recipe передает в представление данные рецепта с полученым Id
+	 * @param integer $id - номер рецепта.
+	 */
 
 	public function recipe($id) {
 		$params = array('conditions' => array('Recipe.Id' => $id));
@@ -65,7 +68,7 @@ class RecipesController extends AppController {
 		$recd = str_replace("\r", '<br>', $recd);
 		$recd = $this->Converter->convert($recd);
 
-		/* Извлечение данных из JSON*/
+		// Извлечение данных из JSON
 
 		if(!$this->CheckJson->isJson($recd)){
 			continue;
@@ -79,7 +82,7 @@ class RecipesController extends AppController {
 			$imglink = FULL_BASE_URL.'/img/240/default.jpg';
 		}
 
-		/*Отправка данных в представление*/
+		//Отправка данных в представление
 
 		$recipeData = array('title' => $json->title,
 							'calories' => $json->calories,
@@ -91,6 +94,9 @@ class RecipesController extends AppController {
 		$this->set($recipeData);
 	}
 
+	/**
+	 *  Метод аналогичен index, но вызывается только AJAX запросом
+	 */
 	public function screw() {
 
 		if ($this->request->is('ajax')) {
@@ -127,7 +133,7 @@ class RecipesController extends AppController {
 				unset($toArray);
 			}
 
-			/*Отправка данных в представление*/
+			//Отправка данных в представление
 			$this->set(array('arrayRecipes' => $arrayRecipes));
 			$this->Session->write('page', $page);
 		} else {
@@ -135,14 +141,12 @@ class RecipesController extends AppController {
 		}
 	}
 
+	/**
+	 *  Метод передает в представление изображение нужного размера
+	 * @param integer $id - номер рецепта.
+	 * @param integer $size - необходимый размер изображения.
+	 */
 	public function image($id, $size){
-		$mt = strtotime('Wed, 17 Sep 2014 19:11:33 GMT');
-		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) &&
-			strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mt)
-		{
-			header('HTTP/1.1 304 Not Modified');
-			die;
-		}
 		$params = array('conditions' => array('Recipe.Id' => $id));
 		$recipe = $this->Recipe->find('first', $params);
 		if (empty($recipe))

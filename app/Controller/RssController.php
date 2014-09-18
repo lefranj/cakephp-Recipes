@@ -1,159 +1,47 @@
 <?php
 
 App::uses('AppController', 'Controller');
+require_once(APP.'Vendor/simplepie/autoloader.php');
+include_once(APP.'Vendor/simplepie/idn/idna_convert.class.php');
 
-class RecipesController extends AppController {
+class RssController extends AppController {
+	private $feed;
 
-	public $uses = array('Recipe', 'Image');
-	public $components = array('CheckJson', 'Converter', 'RequestHandler');
-
-	public function index($page = 1) {
-		$mt = strtotime('Wed, 17 Sep 2014 19:01:33 GMT');
-		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) &&
-			strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mt)
-		{
-			header('HTTP/1.1 304 Not Modified');
-			die;
-		}
-
-		$this->Session->write('page', 1);
-
-		/* Получение данных из поля Data БД*/
-
-		$lenght = 10;
-		$arrayRecipes = array();
-		$recipes = $this->Recipe->find("all",array('limit'=>$lenght, 'page'=>$page));
-
-		/* Приведение JSON в пригодное для развертывания состояние*/
-
-		foreach ($recipes as $recipe) {
-			$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
-			$recd = str_replace("\r", '', $recd);
-			$recd = $this->Converter->convert($recd);
-
-			/* Извлечение данных из JSON*/
-
-			if(!$this->CheckJson->isJson($recd)){
-				continue;
+	//Вывод RSS фида
+	public function index() {
+		$toVeiw = array();
+		$this->layout = 'rss';
+		$this->feed = new SimplePie();
+		// Провряем получен-ли url фида
+		if (isset($this->request['data']['url']) && $this->request['data']['url'] !== '') {
+			// Устанавливаем url из которого будем получать фид
+			$this->feed->set_feed_url($this->request['data']['url']); 
+			$this->feed->init(); // Инициализация SimplePie
+			$this->feed->handle_content_type();
+			// Получаем последние 50 записей
+			foreach($this->feed->get_items(0, 50) as $item) {
+				// Готовим данные для передачи в представление
+				$toView[] = array(
+					'title' => $item->get_title(),
+					'date' => $item->get_date('j F Y | g:i a'),
+					'description' => $item->get_description(),
+					'link' => $item->get_permalink(),
+					'feed_url' => $this->request['data']['url']
+					);
+				// Передаем данные в представление  
+				$this->set('feed_url', $this->request['data']['url']);
 			}
-
-			$json = json_decode($recd);
-			$toArray = array(
-				'id' => $recipe['Recipe']['Id'],
-				'json' => $json,
-				'link' => "/recipes/recipe/{$recipe['Recipe']['Id']}"
+		} else {
+			$toView[] = array(
+				'title' => '',
+				'date' => '',
+				'description' => '',
+				'link' => '',
 			);
-
-			if (isset($json->images) && !empty($json->images)){
-				$toArray['imgLink'] = '/recipes/image/'.$toArray['id'].'/120';
-			} else {
-				$toArray['imgLink'] = FULL_BASE_URL.'/img/120/default.jpg';
-			}
-				$arrayRecipes[] = $toArray;
-				unset($toArray);
+			$this->set('feed_url', '');
 		}
-
-		/*Отправка данных в представление*/
-
-		$this->set(array('arrayRecipes' => $arrayRecipes));
-	}
-
-	public function recipe($id) {
-		$params = array('conditions' => array('Recipe.Id' => $id));
-		$recipe = $this->Recipe->find('first', $params);
-		$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
-		$recd = str_replace("\r", '<br>', $recd);
-		$recd = $this->Converter->convert($recd);
-
-		/* Извлечение данных из JSON*/
-
-		if(!$this->CheckJson->isJson($recd)){
-			continue;
-		}
-
-		$json = json_decode($recd);
-		if (isset($json->images) && !empty($json->images)){
-			$imagedata = $json->images;
-			$imglink = $this->Image->getImage($imagedata, 240);
-		} else {
-			$imglink = FULL_BASE_URL.'/img/240/default.jpg';
-		}
-
-		/*Отправка данных в представление*/
-
-		$recipeData = array('title' => $json->title,
-							'calories' => $json->calories,
-							'cooktime' => $json->cooktime,
-							'description' => $json->description,
-							'ingredients' => $json->ingredients,
-							'link' => $json->link,
-							'imglink' => $imglink);
-		$this->set($recipeData);
-	}
-
-	public function screw() {
-
-		if ($this->request->is('ajax')) {
-			$page = $this->Session->read('page') + 1;
-			$this->layout = false;
-			// Получение данных из поля Data БД
-			$lenght = 10;
-			$arrayRecipes = array();
-			$recipes = $this->Recipe->find("all",array('limit'=>$lenght, 'page'=>$page));
-
-			// Приведение JSON в пригодное для развертывания состояние
-
-			foreach ($recipes as $recipe) {
-				$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
-				$recd = str_replace("\r", '', $recd);
-				$recd = $this->Converter->convert($recd);
-
-				// Извлечение данных из JSON
-				if(!$this->CheckJson->isJson($recd))
-					continue;
-
-				$json = json_decode($recd);
-				$toArray = array(
-					'id' => $recipe['Recipe']['Id'],
-					'json' => $json,
-					'link' => "/recipes/recipe/{$recipe['Recipe']['Id']}"
-				);
-
-				if (isset($json->images) && !empty($json->images))
-					$toArray['imgLink'] = '/recipes/image/'.$toArray['id'].'/120';
-				else
-					$toArray['imgLink'] = FULL_BASE_URL.'/img/120/default.jpg';
-				$arrayRecipes[] = $toArray;
-				unset($toArray);
-			}
-
-			/*Отправка данных в представление*/
-			$this->set(array('arrayRecipes' => $arrayRecipes));
-			$this->Session->write('page', $page);
-		} else {
-			throw new BadRequestException();
-		}
-	}
-
-	public function image($id, $size){
-		$mt = strtotime('Wed, 17 Sep 2014 19:11:33 GMT');
-		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) &&
-			strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mt)
-		{
-			header('HTTP/1.1 304 Not Modified');
-			die;
-		}
-		$params = array('conditions' => array('Recipe.Id' => $id));
-		$recipe = $this->Recipe->find('first', $params);
-		if (empty($recipe))
-			$this->redirect(FULL_BASE_URL.'/img/'.$size.'/default.jpg', 303);
-		$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
-		$recd = str_replace("\r", '', $recd);
-		$recd = $this->Converter->convert($recd);
-		if(!$this->CheckJson->isJson($recd))
-			$this->redirect(FULL_BASE_URL.'/img/'.$size.'/default.jpg', 303);
-		$json = json_decode($recd);
-		$link = $this->Image->getImage($json->images, $size);
-		$this->redirect($link, 303);
+		// Передаем данные в представление
+		$this->set('toView', $toView);
+		$this->set('title_for_layout', 'RSS')
 	}
 }
