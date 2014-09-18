@@ -7742,3 +7742,13 @@ Request URL: /wp-content/themes/stage_wp_hybrid/favicon.ico
 Stack Trace:
 #0 /home/lefranj/www/ioix/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-09-17 19:57:54 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/home/lefranj/www/ioix/app/Controller/RecipesController.php, line 11]
+2014-09-17 19:57:54 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /
+Stack Trace:
+#0 /home/lefranj/www/ioix/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/lefranj/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/lefranj/w...', 11, Array)
+#2 /home/lefranj/www/ioix/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/lefranj/w...', 11, Array)
+#3 /home/lefranj/www/ioix/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
