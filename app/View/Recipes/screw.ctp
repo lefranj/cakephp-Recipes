@@ -6,6 +6,6 @@
 		<div class='image'><span class="screw-image" rel="<?=$recipe['imgLink']?>">Loading ... </span></div>
 		<div class='calories'>Calories: <?=$recipe['json']->calories?></div><br><br>
 		<div class='cooktime'>Cooktime: <?=$recipe['json']->cooktime?> min</div>
-		<div class='ingredients'>Ingredients:<br> <?=$recipe['json']->ingredients?></div>
+		<div class='ingredients'><?=$recipe['json']->ingredients?></div>
 	</div>
 <?php endforeach;?>
