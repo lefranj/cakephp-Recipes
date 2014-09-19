@@ -2,15 +2,25 @@
 
 App::uses('AppController', 'Controller');
 
+/**
+* RecipesController
+*
+* Контроллер овечает за вывод списка рецептов, страниц рецептов
+* и изображений
+*
+* @param array $uses; Используемые модели
+* @param array $components; Используемые компоненты
+*/
 class RecipesController extends AppController {
 
 	public $uses = array('Recipe', 'Image');
 	public $components = array('CheckJson', 'RequestHandler', 'Converter');
 
-	/**
-	 *  Метод index вызывается при загрузке страницы со списком рецептов
-	 * @param integer $page - номер страницы. Используется для последовательного получения рецептов из БД
-	 */
+/**
+ *  Метод index вызывается при загрузке страницы со списком рецептов
+ *
+ * @param integer $page - номер страницы. Используется для последовательного получения рецептов из БД
+ */
 	public function index($page = 1) {
 		$mt = strtotime('Wed, 17 Sep 2014 19:01:33 GMT');
 
@@ -31,10 +41,11 @@ class RecipesController extends AppController {
 		$this->set(array('arrayRecipes' => $arrayRecipes));
 	}
 
-	/**
-	 *  Метод recipe передает в представление данные рецепта с полученым Id
-	 * @param integer $id - номер рецепта.
-	 */
+/**
+ *  Метод recipe передает в представление данные рецепта с полученым Id
+ *
+ * @param integer $id - номер рецепта.
+ */
 	public function recipe($id) {
 		$params = array('conditions' => array('Recipe.Id' => $id));
 		$recipe = $this->Recipe->find('first', $params);
@@ -42,11 +53,11 @@ class RecipesController extends AppController {
 		$this->set('recipe', $recipeData);
 	}
 
-	/**
-	 *  Метод аналогичен index, но вызывается только AJAX запросом
-	 */
+/**
+ *  Метод screw вызывается при достижении конца страницы и дополняет список рецептов
+ */
 	public function screw() {
-
+		// Если запрос был передан не через AJAX 
 		if ($this->request->is('ajax')) {
 			$page = $this->Session->read('page') + 1;
 			$this->layout = false;
@@ -63,11 +74,12 @@ class RecipesController extends AppController {
 		}
 	}
 
-	/**
-	 *  Метод image выполняет кеширование картинки и перенаправляет на неё
-	 * @param integer $id - номер рецепта.
-	 * @param integer $size - необходимый размер изображения.
-	 */
+/**
+ *  Метод image выполняет кеширование картинки и перенаправляет на неё
+ *
+ * @param integer $id - номер рецепта.
+ * @param integer $size - необходимый размер изображения.
+ */
 	public function image($id, $size){
 		$params = array('conditions' => array('Recipe.Id' => $id));
 		$recipe = $this->Recipe->find('first', $params);

@@ -1,13 +1,18 @@
 <?php
-
+/**
+* Модель Recipe
+*
+* Содержит методы для получения из базы данных информации о рецептах.
+*/
 class Recipe extends AppModel {
-public $codes = array('u0','u1','u2','u3','u4','u5','u6','u7','u8','u9');
-public $chars = array('\u0','\u1','\u2','\u3','\u4','\u5','\u6','\u7','\u8','\u9');
-	/**
-	 *  Метод getItemsList обрабатывает данные полученные из базы данных
-	 * @param array $recipes - многмерный массив записей
-	 * @return array $arrayRecipes - многомерный массив с информацией о рецептах
-	 */
+
+/**
+ *  Метод getItemsList обрабатывает данные полученные из базы данных.
+ *  Возвращает массив содержащий значения для формирования списка рецептов
+ *
+ * @param array $recipes - многмерный массив записей
+ * @return array $arrayRecipes - многомерный массив с информацией о рецептах
+ */
 	public function getItemsList($recipes){
 		foreach ($recipes as $recipe) {
 			// Приведение JSON в пригодное для развертывания состояние
@@ -45,11 +50,13 @@ public $chars = array('\u0','\u1','\u2','\u3','\u4','\u5','\u6','\u7','\u8','\u9
 		return $arrayRecipes;
 	}
 
-	/**
-	 *  Метод getItemsRecipe обрабатывает данные полученные из базы данных
-	 * @param array $recipe - массив c информацией о рецепте в формате JSON
-	 * @return array $toArray - многомерный массив с информацией о рецептах
-	 */
+/**
+ *  Метод getItemsRecipe обрабатывает данные полученные из базы данных.
+ *  Возвращает массив содержащий значения для формирования страницы рецепта
+ *
+ * @param array $recipe - массив c информацией о рецепте в формате JSON
+ * @return array $toArray - многомерный массив с информацией о рецепте
+ */
 	public function getItemsRecipe($recipe){
 		// Приведение JSON в пригодное для развертывания состояние
 		$recd = str_replace("\n", '<br>', $recipe['Recipe']['Data']);
@@ -78,22 +85,26 @@ public $chars = array('\u0','\u1','\u2','\u3','\u4','\u5','\u6','\u7','\u8','\u9
 		return $toArray;
 	}
 
-	/**
-	 *  Метод convert исправляет кодировку в JSON
-	 * @param string $d - JSON с неверной кодировкой
-	 * @return string $d - JSON с верной кодировкой
-	 */
+/**
+ *  Метод convert исправляет кодировку в JSON
+ *
+ * @param string $d - JSON с неверной кодировкой
+ * @return string $d - JSON с верной кодировкой
+ */
 	public function convert($d) {
-		$d = str_replace($this->codes,$this->chars,$d);
+		$codes = array('u0','u1','u2','u3','u4','u5','u6','u7','u8','u9');
+		$chars = array('\u0','\u1','\u2','\u3','\u4','\u5','\u6','\u7','\u8','\u9');
+		$d = str_replace($codes,$chars,$d);
 		$d = urldecode($d);
 		return($d);
 	}
 
-	/**
-	 *  Метод isJson проверяет строку на JSON
-	 * @param string $string - JSON 
-	 * @return boolean $string - true-JSON, false-не JSON
-	 */
+/**
+ *  Метод isJson проверяет строку на JSON
+ *
+ * @param string $string - JSON 
+ * @return boolean $string - true-JSON, false-не JSON
+ */
 	public function isJson($string) {
 		return ((is_string($string) && (is_object(json_decode($string)) || is_array(json_decode($string))))) ? true : false;
 	}

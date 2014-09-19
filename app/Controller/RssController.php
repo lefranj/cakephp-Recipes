@@ -4,10 +4,18 @@ App::uses('AppController', 'Controller');
 require_once(APP.'Vendor/simplepie/autoloader.php');
 include_once(APP.'Vendor/simplepie/idn/idna_convert.class.php');
 
+/**
+* RssController
+*
+* Контроллер отвечает за вывод страницы RSS фида
+* @param object $feed; Объект класса SimplePie
+*/
 class RssController extends AppController {
 	private $feed;
 
-	//Вывод RSS фида
+	/**
+	 * Метод index получает данные для страницы RSS и передает их в представление
+	 */
 	public function index() {
 		$toVeiw = array();
 		$this->layout = 'rss';

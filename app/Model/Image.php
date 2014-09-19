@@ -1,11 +1,26 @@
 <?php
-
+/**
+* Модель Image
+*
+* Служит для получения из базы данных информации о изображениях,
+* их кеширования и ресайза
+*
+* @param object $imageResize; Объект класса ImageResize
+* @param odject $HttpSocket; Объект класса HttpSocket
+*/
 class Image extends AppModel {
 
 	public $imageResize;
 	public $HttpSocket;
 
-	//Получаем изображение необходимого размера
+/**
+* Метод getImage 
+* 
+*
+* @param array $imgdata; Массив из одного элемента, содержащий данные о изображении
+* @param integer $size; Размер изображения на выходе
+* @return string Ссылка на кешированое изображение нужного размера
+*/
 
 	public function getImage($imgdata, $size) {
 		if (isset($imgdata[0]) && !empty($imgdata[0])){
