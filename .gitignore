@@ -1,1 +1,5 @@
-phpmyadmin/
+app/webroot/phpmyadmin/
+app/tmp/
+app/webroot/img/120/
+app/webroot/img/240/
+app/webroot/img/full/
